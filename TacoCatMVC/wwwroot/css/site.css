@@ -1,0 +1,104 @@
+:root {
+  --sjw-dark-color: #113b08;
+  --sjw-light-color: #eee;
+  --sjw-primary-color: #001e43;
+  --sjw-secondary-color: #507642;
+}
+
+/*change logoFont with each project*/
+.logoFont {
+  font-family: proxima-nova, sans-serif;
+
+  font-weight: 300;
+
+  font-style: bold;
+}
+
+main > .container {
+  padding: 60px 15px 0;
+  margin-bottom: 5rem;
+  min-height: 90vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+}
+
+.jsicon {
+  color: rgb(226, 211, 4);
+}
+
+.bsicon {
+  color: purple;
+}
+
+.htmlicon {
+  color: #ff4500;
+}
+
+.cssicon {
+  color: #0b52d6;
+}
+
+.checkListIcon {
+  color: var(--sjw-secondary-color);
+}
+
+/*--button styles override Bootstrap styles--*/
+.btn.outline-primary {
+  color: var(--sjw-secondary-color);
+  border-color: var(--sjw-secondary-color) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  border-color: var(--sjw-primary-color);
+  background-color: var(--sjw-secondary-color);
+}
+
+.btn-primary {
+  color: white !important;
+  background-color: var(--sjw-secondary-color) !important;
+  border-color: var(--sjw-secondary-color);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  filter: brightness(1.1) !important;
+  border-color: var(--sjw-secondary-color);
+}
+
+/*footer styles*/
+.sticky-footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  padding-right: 1rem;
+  color: var(--sjw-light-color);
+}
+
+footer.social {
+  color: var(--sjw-light-color);
+}
+
+footer .social > a {
+  color: rgb(226, 211, 4);
+  opacity: 0.75;
+}
+
+footer .social > a:hover {
+  color: var(--sjw-secondary-color);
+  opacity: 0.9;
+}
