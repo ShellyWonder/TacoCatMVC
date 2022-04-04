@@ -45,12 +45,12 @@ namespace TacoCatMVC.Controllers
             if (revWord == inputWord)
             {
                 palindome.IsPalindome = true;
-                palindome.Message = $"Success {palindome.InputWord}is a Palindrome";
+                palindome.Message = $"Success! {palindome.InputWord} is a Palindrome";
             }
             else
             {
                 palindome.IsPalindome = false;
-                palindome.Message = $"SORRY {palindome.InputWord}is NOT a Palindrome";
+                palindome.Message = $"SORRY! {palindome.InputWord}is NOT a Palindrome";
             }
             return View(palindome);
         }
